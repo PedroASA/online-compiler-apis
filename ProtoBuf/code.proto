@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // option go_package = "example.com/apis";
-package main;
+package code;
 
 service RunJS {
   rpc Run (CodeRequest) returns (CodeReply) {}

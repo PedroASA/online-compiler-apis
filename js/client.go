@@ -27,7 +27,7 @@ import (
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	pb "github.com/userName/otherModule/js"
+	pb "github.com/PedroASA/online-compiler-apis/tree/master/ProtoBuf/code"
 )
 
 const (
