@@ -30,7 +30,7 @@ import (
 	"io/ioutil"
 
 	"google.golang.org/grpc"
-	pb "github.com/PedroASA/online-compiler-apis/tree/master/ProtoBuf"
+	pb "github.com/userName/otherModule/apis"
 )
 
 var (
