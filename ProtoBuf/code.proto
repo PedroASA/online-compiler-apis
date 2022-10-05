@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+// option go_package = "example.com/apis";
+package main;
+
+service RunJS {
+  rpc Run (CodeRequest) returns (CodeReply) {}
+}
+
+service RunHS {
+  rpc Compile (CodeRequest) returns (CodeReply) {}
+  rpc Run (CodeRequest) returns (CodeReply) {}
+}
+
+service RunCpp {
+  rpc Compile (CodeRequest) returns (CodeReply) {}
+  rpc Run (CodeRequest) returns (CodeReply) {}
+}
+
+message CodeRequest {
+  string code = 1;
+  string input = 2;
+}
+
+message CodeReply {
+  string out_message = 1;
+  string err_message = 2;
+}
